@@ -1,0 +1,9 @@
+Maybank Assessment Simple Bank Implementation
+
+- Spring MVC, Spring Security, Thymeleaf, Spring Data JPA, Spring Data REST
+- Database via memory (mySql Workbench)
+- Run with Tomcat Server
+
+
+- Refer to System-Flowchart.png at root project for visualization of system
+- Refer to ER-Diagram at root project for DB schema table creation and relationship
