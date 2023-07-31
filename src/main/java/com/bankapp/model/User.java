@@ -21,6 +21,9 @@ public class User implements UserDetails{
     private String password;
     private String firstName;
     private String lastName;
+    private String accountType;
+
+    private String accountStatus;
 
     @Column(name = "email", nullable = false, unique = true)
     private String email;
@@ -40,6 +43,9 @@ public class User implements UserDetails{
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
     private Set<UserRole> userRoles = new HashSet<>();
+
+    public User() {
+    }
 
     public Set<UserRole> getUserRoles() {
         return userRoles;
@@ -145,6 +151,8 @@ public class User implements UserDetails{
                 ", phone='" + phone + '\'' +
                 ", recipientList=" + recipientList +
                 ", userRoles=" + userRoles +
+                ", userRoles=" + accountType +
+                ", userRoles=" + accountStatus +
                 '}';
     }
 
