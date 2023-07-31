@@ -7,3 +7,4 @@ Maybank Assessment Simple Bank Implementation
 
 - Refer to System-Flowchart.png at root project for visualization of system
 - Refer to ER-Diagram at root project for DB schema table creation and relationship
+- Run >> BankAppApplication.java
